@@ -1,0 +1,530 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:padding="2dp"
+    tools:context="com.dipoletech.basesimulator.BinaryOperationActivityFragment">
+
+
+    <android.support.v7.widget.GridLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="top"
+        app:orientation="horizontal"
+        app:columnCount="9"
+        app:useDefaultMargins="true">
+
+        <CheckBox
+            android:id="@+id/operand1_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />
+
+        <ImageView
+            android:id="@+id/operand1_img_128"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:scaleType="fitCenter"
+            android:maxHeight="32dp"
+            app:layout_gravity="center_horizontal"
+            android:maxWidth="32dp"
+            android:src="@drawable/green_light_bulb"
+            android:contentDescription="@string/image_desc" />
+
+        <ImageView
+            android:id="@+id/operand1_img_64"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:scaleType="fitCenter"
+            android:maxHeight="32dp"
+            android:maxWidth="32dp"
+            app:layout_gravity="center_horizontal"
+            android:src="@drawable/green_light_bulb"
+            android:contentDescription="@string/image_desc" />
+
+        <ImageView
+            android:id="@+id/operand1_img_32"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:scaleType="fitCenter"
+            android:maxHeight="32dp"
+            android:maxWidth="32dp"
+            app:layout_gravity="center_horizontal"
+            android:src="@drawable/green_light_bulb"
+            android:contentDescription="@string/image_desc" />
+
+        <ImageView
+            android:id="@+id/operand1_img_16"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:scaleType="fitCenter"
+            android:maxHeight="32dp"
+            android:maxWidth="32dp"
+            app:layout_gravity="center_horizontal"
+            android:src="@drawable/green_light_bulb"
+            android:contentDescription="@string/image_desc" />
+
+        <ImageView
+            android:id="@+id/operand1_img_8"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:scaleType="fitCenter"
+            android:maxHeight="32dp"
+            android:maxWidth="32dp"
+            app:layout_gravity="center_horizontal"
+            android:src="@drawable/green_light_bulb"
+            android:contentDescription="@string/image_desc" />
+
+        <ImageView
+            android:id="@+id/operand1_img_4"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:scaleType="fitCenter"
+            android:maxHeight="32dp"
+            android:maxWidth="32dp"
+            app:layout_gravity="center_horizontal"
+            android:src="@drawable/green_light_bulb"
+            android:contentDescription="@string/image_desc" />
+
+        <ImageView
+            android:id="@+id/operand1_img_2"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:scaleType="fitCenter"
+            android:maxHeight="32dp"
+            android:maxWidth="32dp"
+            app:layout_gravity="center_horizontal"
+            android:src="@drawable/green_light_bulb"
+            android:contentDescription="@string/image_desc" />
+
+        <ImageView
+            android:id="@+id/operand1_img_1"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:scaleType="fitCenter"
+            android:maxHeight="32dp"
+            android:maxWidth="32dp"
+            app:layout_gravity="center_horizontal"
+            android:src="@drawable/green_light_bulb"
+            android:contentDescription="@string/image_desc" />
+
+        <!--second row begins here?-->
+        <CheckBox
+            android:id="@+id/operand2_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/operand2_img_128"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:scaleType="fitCenter"
+            android:maxHeight="32dp"
+            app:layout_gravity="center_horizontal"
+            android:maxWidth="32dp"
+            android:src="@drawable/green_light_bulb"
+            android:contentDescription="@string/image_desc" />
+
+        <ImageView
+            android:id="@+id/operand2_img_64"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:scaleType="fitCenter"
+            android:maxHeight="32dp"
+            android:maxWidth="32dp"
+            app:layout_gravity="center_horizontal"
+            android:src="@drawable/green_light_bulb"
+            android:contentDescription="@string/image_desc" />
+
+        <ImageView
+            android:id="@+id/operand2_img_32"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:scaleType="fitCenter"
+            android:maxHeight="32dp"
+            android:maxWidth="32dp"
+            app:layout_gravity="center_horizontal"
+            android:src="@drawable/green_light_bulb"
+            android:contentDescription="@string/image_desc" />
+
+        <ImageView
+            android:id="@+id/operand2_img_16"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:scaleType="fitCenter"
+            android:maxHeight="32dp"
+            android:maxWidth="32dp"
+            app:layout_gravity="center_horizontal"
+            android:src="@drawable/green_light_bulb"
+            android:contentDescription="@string/image_desc" />
+
+        <ImageView
+            android:id="@+id/operand2_img_8"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:scaleType="fitCenter"
+            android:maxHeight="32dp"
+            android:maxWidth="32dp"
+            app:layout_gravity="center_horizontal"
+            android:src="@drawable/green_light_bulb"
+            android:contentDescription="@string/image_desc" />
+
+        <ImageView
+            android:id="@+id/operand2_img_4"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:scaleType="fitCenter"
+            android:maxHeight="32dp"
+            android:maxWidth="32dp"
+            app:layout_gravity="center_horizontal"
+            android:src="@drawable/green_light_bulb"
+            android:contentDescription="@string/image_desc" />
+
+        <ImageView
+            android:id="@+id/operand2_img_2"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:scaleType="fitCenter"
+            android:maxHeight="32dp"
+            android:maxWidth="32dp"
+            app:layout_gravity="center_horizontal"
+            android:src="@drawable/green_light_bulb"
+            android:contentDescription="@string/image_desc" />
+
+        <ImageView
+            android:id="@+id/operand2_img_1"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:scaleType="fitCenter"
+            android:maxHeight="32dp"
+            android:maxWidth="32dp"
+            app:layout_gravity="center_horizontal"
+            app:layout_columnSpan="1"
+            android:src="@drawable/green_light_bulb"
+            android:contentDescription="@string/image_desc" />
+
+        <!--Third row begins here-->
+
+
+        <CheckBox
+            android:id="@+id/answer_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/answer_img_128"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:scaleType="fitCenter"
+            android:maxHeight="32dp"
+            app:layout_gravity="center_horizontal"
+            android:maxWidth="32dp"
+            android:src="@drawable/green_light_bulb"
+            android:contentDescription="@string/image_desc" />
+
+        <ImageView
+            android:id="@+id/answer_img_64"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:scaleType="fitCenter"
+            android:maxHeight="32dp"
+            android:maxWidth="32dp"
+            app:layout_gravity="center_horizontal"
+            android:src="@drawable/green_light_bulb"
+            android:contentDescription="@string/image_desc" />
+
+        <ImageView
+            android:id="@+id/answer_img_32"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:scaleType="fitCenter"
+            android:maxHeight="32dp"
+            android:maxWidth="32dp"
+            app:layout_gravity="center_horizontal"
+            android:src="@drawable/green_light_bulb"
+            android:contentDescription="@string/image_desc" />
+
+        <ImageView
+            android:id="@+id/answer_img_16"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:scaleType="fitCenter"
+            android:maxHeight="32dp"
+            android:maxWidth="32dp"
+            app:layout_gravity="center_horizontal"
+            android:src="@drawable/green_light_bulb"
+            android:contentDescription="@string/image_desc" />
+
+        <ImageView
+            android:id="@+id/answer_img_8"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:scaleType="fitCenter"
+            android:maxHeight="32dp"
+            android:maxWidth="32dp"
+            app:layout_gravity="center_horizontal"
+            android:src="@drawable/green_light_bulb"
+            android:contentDescription="@string/image_desc" />
+
+        <ImageView
+            android:id="@+id/answer_img_4"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:scaleType="fitCenter"
+            android:maxHeight="32dp"
+            android:maxWidth="32dp"
+            app:layout_gravity="center_horizontal"
+            android:src="@drawable/green_light_bulb"
+            android:contentDescription="@string/image_desc" />
+
+        <ImageView
+            android:id="@+id/answer_img_2"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:scaleType="fitCenter"
+            android:maxHeight="32dp"
+            android:maxWidth="32dp"
+            app:layout_gravity="center_horizontal"
+            android:src="@drawable/green_light_bulb"
+            android:contentDescription="@string/image_desc" />
+
+        <ImageView
+            android:id="@+id/answer_img_1"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:scaleType="fitCenter"
+            android:maxHeight="32dp"
+            android:maxWidth="32dp"
+            app:layout_gravity="center_horizontal"
+            app:layout_columnSpan="1"
+            android:src="@drawable/green_light_bulb"
+            android:contentDescription="@string/image_desc" />
+
+
+    </android.support.v7.widget.GridLayout>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_gravity="bottom"
+        android:padding="5dp"
+        android:layout_marginTop="32dp"
+        android:layout_alignParentBottom="true"
+        app:cardBackgroundColor="@color/black_overlay"
+        card_view:cardCornerRadius="5dp"
+        android:elevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="top"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_128"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/button_128"
+                android:textSize="12sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_64"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/button_64"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_32"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/button_32" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_16"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/button_16" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_8"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/button_8" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_4"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/button_4" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_2"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/button_2" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/button_1" />
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.GridLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="70dp"
+            app:orientation="vertical"
+            app:columnCount="4"
+            app:useDefaultMargins="true"
+            app:rowOrderPreserved="true">
+
+
+            <TextView
+                android:id="@+id/operation_status_text"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                app:layout_columnSpan="4"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill_horizontal"
+                android:padding="20dp"
+                android:background="@color/black_overlay_1"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:gravity="center"
+                app:layout_row="0"
+                android:text="@string/game_mode"
+                android:textSize="14sp" />
+
+            <ImageButton
+                android:id="@+id/division_button"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:layout_columnWeight="1"
+                app:layout_columnSpan="1"
+                app:layout_row="1"
+                app:layout_column="0"
+                android:src="@drawable/green_division"
+                android:contentDescription="@string/Image" />
+
+            <ImageButton
+                android:id="@+id/multiplication_button"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:layout_columnWeight="1"
+                app:layout_columnSpan="1"
+                app:layout_row="1"
+                app:layout_column="1"
+                android:src="@drawable/red_close"
+                android:contentDescription="@string/Image" />
+
+            <ImageButton
+                android:id="@+id/addition_button"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:layout_columnWeight="1"
+                app:layout_columnSpan="1"
+                app:layout_row="1"
+                app:layout_column="2"
+                android:src="@drawable/green_plus"
+                android:contentDescription="@string/Image" />
+
+
+            <Button
+                android:id="@+id/button_reset"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:layout_columnWeight="1"
+                app:layout_columnSpan="1"
+                app:layout_row="1"
+                app:layout_column="3"
+                app:layout_gravity="fill_horizontal"
+                android:text="@string/string_reset"/>
+
+
+            <!--second row-->
+            <ImageButton
+                android:id="@+id/subtraction_button"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:layout_columnWeight="1"
+                app:layout_columnSpan="1"
+                app:layout_row="2"
+                app:layout_column="0"
+                android:src="@drawable/red_minus"
+                android:contentDescription="@string/Image" />
+
+
+            <ImageButton
+                android:id="@+id/minus_button"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:layout_columnWeight="1"
+                app:layout_columnSpan="1"
+                app:layout_row="2"
+                app:layout_column="1"
+                android:src="@drawable/red_minus"
+                android:contentDescription="@string/Image" />
+
+            <ImageButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:layout_columnWeight="1"
+                app:layout_columnSpan="1"
+                app:layout_row="2"
+                app:layout_column="2"
+                app:layout_gravity="fill_horizontal"
+                android:src="@drawable/red_minus" />
+
+
+            <Button
+                android:id="@+id/execute_button"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:layout_columnWeight="1"
+                app:layout_columnSpan="1"
+                app:layout_row="2"
+                app:layout_column="3"
+                app:layout_gravity="fill_horizontal"
+                android:text="@string/execute" />
+
+
+        </android.support.v7.widget.GridLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

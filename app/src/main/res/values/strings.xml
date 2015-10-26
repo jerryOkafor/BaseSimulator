@@ -1,0 +1,108 @@
+<resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
+    <string name="app_name">Base \u03B7\u00AE</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">Base \u03B7\u00AE</string>
+    <string name="slide_one_title">Welcome to Base \u03B7\u00AE</string>
+    <string name="slide_one_description">Base \u03B7\u00AE is a Number base Simulator and tutor!</string>
+    <string name="ete">\u03B7</string>
+    <string name="string_128">128</string>
+    <string name="string_64">64</string>
+    <string name="string_32">32</string>
+    <string name="string_16">16</string>
+    <string name="string_8">8</string>
+    <string name="string_4">4</string>
+    <string name="string_2">2</string>
+    <string name="string_1">1</string>
+    <string name="game_mode_null">Game Mode:Null</string>
+    <string name="game_mode">Game Mode</string>
+    <string name="initial_zero">0</string>
+    <string name="Image">Image</string>
+    <string name="all_on">All On</string>
+    <string name="all_off">All Off</string>
+    <string name="image">IMage</string>
+    <string name="image_desc">Image</string>
+    <string name="game_mode_choice">Please Choose the Game Mode!</string>
+    <string name="ok">Ok</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+
+    <!--Game Mode Format and set-->
+    <string name="game_mode_text_format"><xliff:g id="decimal">%d</xliff:g> = <xliff:g id="binary">%s</xliff:g></string>
+    <string name="current_operation_text_format"><xliff:g id="b1">%s</xliff:g><xliff:g id="operation"> %s</xliff:g>
+        <xliff:g id="b2">%s</xliff:g> = <xliff:g id="answer">%s</xliff:g></string>
+    <string name="game_mode_format">Game Mode Set: <xliff:g id="mode">%s</xliff:g></string>
+    <string name="string_reset">Reset</string>
+    <string name="game_over">Game Over!</string>
+    <string name="game_over_text">Thank u for playing the Game. This a Development project on Binary Computation which
+        is the driver of digital world of computers as your can see.</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_compute">Next</string>
+    <string name="title_activity_binary_operation">@string/app_name</string>
+    <string name="execute">Execute</string>
+
+    <string name="plus_sign"> \u002B </string>
+    <string name="times_sign"> \u00D7 </string>
+    <string name="division_sign"> \u00F7 </string>
+    <string name="equal_sign"> \u003D </string>
+</resources>
