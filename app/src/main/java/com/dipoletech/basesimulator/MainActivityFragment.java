@@ -17,7 +17,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.dipoletech.basesimulator.classes.GameModeDialog;
-import com.dipoletech.basesimulator.classes.GameOverDialog;
 import com.dipoletech.basesimulator.classes.Utility;
 
 import java.util.ArrayList;
@@ -299,10 +298,11 @@ public class MainActivityFragment extends Fragment {
         displayBinaryValue();
     }
 
-    private void animateBulbs(String binaryString) {
+    private void animateBulbs(String biString) {
         List<Integer> bits = new ArrayList<>(8);
-        for (int count = binaryString.length() - 1; count >= 0; count--) {
-            int bit = Integer.parseInt(String.valueOf(binaryString.charAt(count)));
+
+        for (int count = biString.length() - 1; count >= 0; count--) {
+            int bit = Integer.parseInt(String.valueOf(biString.charAt(count)));
             bits.add(bit);
         }
         //  Toast.makeText(getActivity(), bits.size() + " "+ images.size(), Toast.LENGTH_LONG).show();
@@ -405,16 +405,16 @@ public class MainActivityFragment extends Fragment {
         if(binaryGameModeValue.equals(String.valueOf(imagesBinaryMode)))
         {
             //do the animation
+            animateBulbs(binaryGameModeValue);
             //animateBulbs(binaryGameModeValue);
 
             //then game over show the game over dialog
-            GameOverDialog gameOver = new GameOverDialog();
-            gameOver.setCancelable(false);
-            gameOver.show(getFragmentManager().beginTransaction(),"GAME_OVER");
+//            GameOverDialog gameOver = new GameOverDialog();
+//            gameOver.setCancelable(false);
+//            gameOver.show(getFragmentManager().beginTransaction(),"GAME_OVER");
 
-            //cancel all the game mode
-            cancelGameMode("Game Over!");
-            allOff();
+
+
 
         }
 
