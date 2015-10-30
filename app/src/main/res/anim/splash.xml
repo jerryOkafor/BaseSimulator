@@ -2,6 +2,6 @@
 <animation-list
     android:oneshot="false"
     xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@drawable/green_light_bulb" android:duration="100"/>
-    <item android:drawable="@drawable/red_light_bulb" android:duration="100"/>
+    <item android:drawable="@drawable/green_light_bulb" android:duration="83"/>
+    <item android:drawable="@drawable/red_light_bulb" android:duration="83"/>
 </animation-list>

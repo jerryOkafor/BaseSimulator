@@ -184,7 +184,7 @@ public class MainActivityFragment extends Fragment {
                         .setAction("Action", null).show();
 
                 }else {
-                    count = count + 1;
+                    count +=1;
                     updateCounterStatus();
                     lightBulbs();
                 }
@@ -201,7 +201,7 @@ public class MainActivityFragment extends Fragment {
                             .setAction("Action", null).show();
 
                 } else {
-                    count = count - 1;
+                    count = count-1;
                     updateCounterStatus();
                     lightBulbs();
                 }
@@ -229,6 +229,10 @@ public class MainActivityFragment extends Fragment {
 
             image.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.red_light_bulb));
             image.setTag("on");
+            counterTextView.setText(String.valueOf(255));
+            count = 255;
+            gameModeStatusTextView.setText(String.format(getActivity().getResources().getString(R.string.game_mode_text_format),count,
+                    Integer.toBinaryString(255)));
         }
     }
 
@@ -328,8 +332,7 @@ public class MainActivityFragment extends Fragment {
 
 
     private void updateCounterStatus() {
-        //convert the decimal to binary
-        counterTextView.setText(String.valueOf(count));
+        counterTextView.setText(String.valueOf(getCount()));
     }
 
     public void setGameMode(String text)
@@ -369,6 +372,7 @@ public class MainActivityFragment extends Fragment {
         gameModeButton.setText(getActivity().getResources().getString(R.string.game_mode));
         plusButton.setEnabled(true);
         minusButton.setEnabled(true);
+        count=0;
         gameModeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -448,4 +452,7 @@ public class MainActivityFragment extends Fragment {
     }
 
 
+    public int getCount() {
+        return count;
+    }
 }
